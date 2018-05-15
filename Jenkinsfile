@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                sh 'make' 
+                echo 'make' 
             }
         }
         stage('Test'){
@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'make publish'
+                echo 'make publish'
             }
         }
     }
